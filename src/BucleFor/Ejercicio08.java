@@ -7,7 +7,7 @@ public class Ejercicio08 {
 		int numero = 8;
 		int contador = 0;
 		for(int i=2;i<numero;i++) {
-			if(numero % 2 == 0) {
+			if(numero % i == 0) {
 				contador++;
 			}
 		}
