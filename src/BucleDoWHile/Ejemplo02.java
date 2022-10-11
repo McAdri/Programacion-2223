@@ -1,17 +1,17 @@
-package bucleWhile;
+package BucleDoWHile;
 
 import java.util.Scanner;
 
-public class Ejercicio01 {
+public class Ejemplo02 {
 
 	public static void main(String[] args) {
-		// Numeros postivos
-		int numero = 1;
+		// TODO Auto-generated method stub
+		int numero = -1;
 		Scanner teclado = new Scanner(System.in);
-		while(numero < 1) {
+		do {
 			System.out.print("Dme un numero: ");
 			numero = teclado.nextInt();
-		}
+		}while(numero<=0);
 	}
 
 }
