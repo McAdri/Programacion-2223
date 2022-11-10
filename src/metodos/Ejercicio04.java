@@ -13,7 +13,11 @@ public class Ejercicio04 {
 	}
 	
 	private static void agregaUno(int prod) {
-		
+		switch(prod) {
+			case 1:
+				refrescos++;
+			break;
+		}
 	}
 	
 	private static void agregaDos(int prod) {
