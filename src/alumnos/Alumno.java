@@ -1,6 +1,6 @@
 package alumnos;
 
-public class Alumno {
+public class Alumno implements Comparable<Alumno>{
 
 	private String nombre;
 	private String apellidos;
@@ -169,5 +169,32 @@ public class Alumno {
 			precio *= 2.5;
 		}
 		return precio;
+	}
+	
+	
+	
+	
+	@Override
+	public String toString() {
+		return "Alumno [nombre=" + nombre + ", apellidos=" + apellidos + ", curso=" + curso + ", numMatricula="
+				+ numMatricula + ", becado=" + becado + ", centroProcedencia=" + centroProcedencia + ", nota=" + nota
+				+ ", repetidor=" + repetidor + "]";
+	}
+
+
+	public int compareTo(Alumno alumno) {
+		return (this.numMatricula < alumno.getNumMatricula() ? -1 :
+			(this.numMatricula == alumno.getNumMatricula() ? 0 : 1));
+		
+		
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if(nombre.equalsIgnoreCase(((Alumno) o).nombre) && apellidos.equalsIgnoreCase(        ((Alumno) o).apellidos           )) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
