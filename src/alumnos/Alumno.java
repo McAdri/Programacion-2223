@@ -143,7 +143,7 @@ public class Alumno implements Comparable<Alumno>{
 	}
 	
 	public boolean pasaCurso() {
-		if(nota>=5) {
+		if(nota>=0) {
 			curso++;
 			nota = 0;
 			return true;
