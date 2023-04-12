@@ -23,6 +23,10 @@ public  class  Figura {
 	public double area() {
 		return 77;
 	}
+	
+	public double perimetro() {
+		return 0;
+	}
 
 	@Override
 	public String toString() {

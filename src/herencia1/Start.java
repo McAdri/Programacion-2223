@@ -9,7 +9,7 @@ public class Start {
 		
 		Circulo circ = new Circulo(3);
 		
-		Cuadrado cuad = new Cuadrado(2);
+		Cuadrado cuad = new Cuadrado(2,4);
 		
 		System.out.println(fig.area());
 		
@@ -20,6 +20,10 @@ public class Start {
 		System.out.println(fig.toString());
 		System.out.println(circ.toString());
 		System.out.println(cuad.toString());
+		
+		DosLados dosLados = new DosLados(3, 7);
+		System.out.println(dosLados.area());
+		System.out.println(dosLados.perimetro());
 	}
 
 }
